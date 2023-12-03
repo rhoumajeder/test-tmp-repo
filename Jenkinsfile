@@ -6,9 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('name') {
+    stage('check') {
       steps {
-        echo 'coucou'
+        git(url: 'https://github.com/rhoumajeder/test-tmp-repo.git', branch: 'master')
       }
     }
 
